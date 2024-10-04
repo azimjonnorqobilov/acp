@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c1aec2d1.css",
+    "main.js": "/static/js/main.8d4fc424.js",
+    "static/media/bg-landing-page-mobile.svg": "/static/media/bg-landing-page-mobile.c3558fa83ce72a2ef5a0.svg",
+    "static/media/globe.svg": "/static/media/globe.13c8d2d1b1dc11e9d0a52adca929aba8.svg",
+    "static/media/bg-landing-page.png": "/static/media/bg-landing-page.a8be84515e1883646297.png",
+    "static/media/bg-sign.svg": "/static/media/bg-sign.0b767cf04ee978dfe49b.svg",
+    "static/media/error.wav": "/static/media/error.33da6e3150a88993f19a.wav",
+    "static/media/Bicubik.woff": "/static/media/Bicubik.01284994bdc86037624c.woff",
+    "static/media/logo-dark.svg": "/static/media/logo-dark.4dc463c13eacd348569f2d72f05b64ac.svg",
+    "static/media/logo-light.svg": "/static/media/logo-light.4b7f6a5bc335e2de49539c3b6653901a.svg",
+    "static/media/resizable-button.svg": "/static/media/resizable-button.f94fc8f5f348a3096259.svg",
+    "static/media/arrow-down-white.svg": "/static/media/arrow-down-white.14c37e9d8fb6544baab5.svg",
+    "static/media/arrow-down-black.svg": "/static/media/arrow-down-black.1eb46542a4240c0ebacd.svg",
+    "index.html": "/index.html",
+    "static/media/getFetch.cjs": "/static/media/getFetch.c4cca45e22bc1b2c7d0d.cjs"
+  },
+  "entrypoints": [
+    "static/css/main.c1aec2d1.css",
+    "static/js/main.8d4fc424.js"
+  ]
+}

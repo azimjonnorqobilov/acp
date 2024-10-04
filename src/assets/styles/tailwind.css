@@ -1,0 +1,355 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("/src/assets/fonts/fonts.css");
+@import "react-datepicker/dist/react-datepicker.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  /* user-select: none; */
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* select */
+
+select {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* select */
+
+/* button */
+
+button:active {
+  filter: brightness(90%);
+  transition: 0.3s;
+}
+
+/* button */
+
+/* loader */
+
+.loader {
+  font-size: 10px;
+  margin: 50px auto;
+  text-indent: -9999em;
+  border-radius: 50%;
+  background: #3f96d0;
+  background: -moz-linear-gradient(left, #3f96d0 10%, rgba(0, 86, 214, 0) 42%);
+  background: -webkit-linear-gradient(left, #3f96d0 10%, rgba(0, 86, 214, 0) 42%);
+  background: -o-linear-gradient(left, #3f96d0 10%, rgba(0, 86, 214, 0) 42%);
+  background: -ms-linear-gradient(left, #3f96d0 10%, rgba(0, 86, 214, 0) 42%);
+  background: linear-gradient(to right, #3f96d0 10%, rgba(0, 86, 214, 0) 42%);
+  -webkit-animation: load3 1.4s infinite linear;
+  animation: load3 1.4s infinite linear;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.loader:before {
+  width: 50%;
+  height: 50%;
+  background: #3f96d0;
+  border-radius: 100% 0 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+}
+.loader:after {
+  width: 75%;
+  height: 75%;
+  background: #ffffff;
+  border-radius: 50%;
+  content: "";
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+@-webkit-keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.dots-loader {
+  display: inline-block;
+  position: relative;
+}
+.dots-loader div {
+  position: absolute;
+  border-radius: 50%;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.dots-loader div:nth-child(1) {
+  left: 8px;
+  animation: dots-loader1 0.6s infinite;
+}
+.dots-loader div:nth-child(2) {
+  left: 8px;
+  animation: dots-loader2 0.6s infinite;
+}
+.dots-loader div:nth-child(3) {
+  left: 32px;
+  animation: dots-loader2 0.6s infinite;
+}
+.dots-loader div:nth-child(4) {
+  left: 56px;
+  animation: dots-loader3 0.6s infinite;
+}
+@keyframes dots-loader1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes dots-loader3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes dots-loader2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+
+/* loader */
+
+/* scroll */
+
+.scrollbar-hidden::-webkit-scrollbar {
+  width: 0;
+  display: none;
+}
+
+.table-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.table-scrollbar::-webkit-scrollbar-track {
+  background: #e3e9f1;
+  border-radius: 1rem;
+}
+
+.dark .table-scrollbar::-webkit-scrollbar-track {
+  background: #415a69;
+  /* margin-top: 10px !important; */
+  /* margin-bottom: 20px !important; */
+}
+
+.table-scrollbar::-webkit-scrollbar-thumb {
+  background: #3f96d0;
+  border-radius: 1rem;
+}
+
+.dark .table-scrollbar::-webkit-scrollbar-thumb {
+  background: #3f96d0;
+  border-radius: 1rem;
+}
+
+/* scroll */
+
+/* message container */
+
+.message-container {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+/* message container */
+
+/* datepicker  */
+
+.react-datepicker {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.react-datepicker .react-datepicker__header {
+  background-color: #f2f5f9;
+}
+
+.dark .react-datepicker .react-datepicker__header {
+  background-color: #1a313e;
+  border-color: #3e6277;
+}
+
+.dark .react-datepicker__triangle {
+  fill: #1a313e !important;
+  stroke: #1a313e !important;
+}
+.dark .react-datepicker__triangle path:nth-child(1) {
+  fill: #3e6277 !important;
+  stroke: #3e6277 !important;
+}
+.dark .react-datepicker__triangle path:nth-child(2) {
+  stroke: #1a313e !important;
+}
+
+.dark .react-datepicker .react-datepicker__header .react-datepicker__current-month {
+  color: #ffffff;
+}
+
+.dark .react-datepicker .react-datepicker__header .react-datepicker__day-name {
+  color: #ffffff80;
+}
+
+.dark .react-datepicker__day {
+  color: #ffffff;
+}
+
+.dark .react-datepicker .react-datepicker__day:hover {
+  background-color: #365364;
+}
+
+.dark .react-datepicker__day--disabled,
+.react-datepicker__month-text--disabled,
+.react-datepicker__quarter-text--disabled,
+.react-datepicker__year-text--disabled {
+  color: #ffffff50;
+}
+
+.dark .react-datepicker__day--keyboard-selected,
+.react-datepicker__month-text--keyboard-selected,
+.react-datepicker__quarter-text--keyboard-selected,
+.react-datepicker__year-text--keyboard-selected {
+  background-color: #6698b6;
+}
+
+.dark .react-datepicker {
+  background-color: #294050;
+  border-color: #3e6277;
+}
+
+/* datepicker  */
+
+/* tooltip */
+
+.tooltip-style {
+  background: #f6f9fe !important;
+  border-radius: 9px !important;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.213);
+}
+.tooltip-arrow-style::before {
+  background: #f6f9fe !important;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.213);
+}
+
+.dark .tooltip-style {
+  background: #2c495a !important;
+  border-radius: 9px !important;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.413);
+}
+.dark .tooltip-arrow-style::before {
+  background: #2c495a !important;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.413);
+}
+
+/* tooltip */
+
+/* input  */
+
+/* input[type="date"]::-webkit-calendar-picker-indicator {
+  color: rgba(0, 0, 0, 0);
+  opacity: 1;
+  display: block;
+  background: url(https://mywildalberta.ca/images/GFX-MWA-Parks-Reservations.png) no-repeat;
+  width: 20px;
+  height: 20px;
+  border-width: thin;
+} */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  /* opacity: 1 !important;
+  background: transparent !important;
+  border-width: 0px;
+  margin: 0;
+  border-left: 1px solid #d8d8d8;
+  height: 34px;
+  width: 18px;
+  cursor: pointer; */
+}
+/* input[type="number"] {
+  position: relative;
+  background: url("../icons/arrow-down-black.svg") 95% 5px no-repeat,
+    url("../icons/arrow-down-black.svg") 95% 23px no-repeat;
+} */
+
+/* input  */
+
+/* infinity scroll */
+
+.ReactVirtualized__Grid__innerScrollContainer {
+  overflow: initial !important;
+  /* width: auto; */
+}
+
+/* infinity scroll */
+
+.rotation-animation {
+  animation: rotation-anim 1s linear 0s infinite;
+}
+
+@keyframes rotation-anim {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.notifcation-animation {
+  animation: notification-anim 1s linear 0s infinite;
+}
+
+@keyframes notification-anim {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(15deg);
+  }
+  75% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}

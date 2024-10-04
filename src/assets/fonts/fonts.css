@@ -1,0 +1,8 @@
+/* @import url("/src/assets/fonts/Bicubik.woff"); */
+
+@font-face {
+  font-family: "Bicubik";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Bicubik"), url("/src/assets/fonts/Bicubik.woff") format("woff");
+}
